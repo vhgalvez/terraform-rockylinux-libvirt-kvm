@@ -58,8 +58,7 @@ resource "libvirt_domain" "rocky9" {
   }
 
   graphics {
-    type        = "spice"
+    type        = "vnc"
     listen_type = "address"
-    autoport    = true
   }
 }
